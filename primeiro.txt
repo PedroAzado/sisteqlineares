@@ -2,3 +2,5 @@
 2a. linha
 
 	funcao criada
+
+a = 1
