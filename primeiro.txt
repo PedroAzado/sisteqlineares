@@ -1,2 +1,4 @@
 1a. linha
 2a. linha
+
+	funcao criada
