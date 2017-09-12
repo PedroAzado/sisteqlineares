@@ -25,16 +25,17 @@ main()
 
 	imprime(A);
 
-	j = 0;
-	
-	for(i=j;i<L;i++)
-	{	
-		if(A[j][j]!=0)
-		{
-			lambda = A[i+1][j]/A[j][j];
+	for(j=0;j<C;j++)
+	{
+		for(i=j;i<L;i++)
+		{	
+			if(A[j][j]!=0)
+			{
+				lambda = A[i+1][j]/A[j][j];
 
-			for(k=0;k<C;k++)
-				A[i+1][k] -= lambda*A[j][k];
+				for(k=0;k<C;k++)
+					A[i+1][k] -= lambda*A[j][k];
+			}
 		}
 	}
 }
