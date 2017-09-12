@@ -24,4 +24,15 @@ main()
 	float lamba, aux;
 
 	imprime(A);
+
+	i = 0;
+	j = 0;
+	
+	if(A[j][j]!=0)
+	{
+		lambda = A[i+1][j]/A[j][j];
+		
+		for(k=0;k<C;k++)
+			A[i+1][k] -= lambda*A[j][k];
+	}
 }
